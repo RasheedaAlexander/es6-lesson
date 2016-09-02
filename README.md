@@ -5,7 +5,23 @@
 
 ### Example from ES5
 ```
+var person = {
+  name: "Beyonce",
+  get name() {
+    return this.name;
+  },
+  set personName(val) {
+    this.name = val;
+  }
+}
+```
 
+Then in the console:
+
+```
+person.name = "Mrs. Carter"
+var bestArtistEver = person.name
+console.log(bestArtistEver);
 ```
 
 ### Examples using ES6
@@ -14,15 +30,26 @@ class Person {
   constructor(name) {
     this._hello = name;
   }
-  get name() {
+  get personName() {
     return this._hello;
   }
-  set name (newName) {
+  set personName (newName) {
     this._name = newName;
-    console.log(this._hello + " is set";)
   }
 }
 ```
+
+Then in the console:
+
+```
+let adele = new Person("Adele")
+adele.personName
+adele.personName = "A-Dawg"
+adele.personName
+```
+
+### Video
+[![video](images/video-getters-setters.png)](https://www.youtube.com/watch?v=nx6DFeNIXlA)
 
 ## Template Literals
 Template Strings use back-ticks rather than single or double quotes.
@@ -32,4 +59,14 @@ They help make the following easier:
 * String interpolation
 * String concatenation
 * Multiline strings
-* Formatting strings (can use both '' and "" without worrying about breaking code)
+* String substitution
+
+### Example from ES5
+```
+
+```
+
+### Examples from ES6
+```
+
+```
