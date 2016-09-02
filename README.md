@@ -62,11 +62,32 @@ They help make the following easier:
 * String substitution
 
 ### Example from ES5
-```
+Multiline strings in ES5:
 
 ```
-
-### Examples from ES6
+var teacher = "Andy \n" + "is on a higher level"
 ```
 
+### Example from ES6
+Multiline strings in ES6:
+
 ```
+var teacher = `Andy
+is on a higher level`
+```
+
+### Example from ES5
+String concatenation:
+```
+var person = "Andy Kim";
+console.log('my name is ' + person + '!');
+```
+### Example from ES6
+Better string concatenation:
+
+```
+var person = "Andy Kim";
+console.log(`My name is ${person}!`);
+```
+### Video
+[![video](images/video-literals.png)](https://www.youtube.com/watch?v=LTbnmiXWs2k)
