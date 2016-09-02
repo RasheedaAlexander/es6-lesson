@@ -52,6 +52,8 @@ adele.personName
 [![video](images/video-getters-setters.png)](https://www.youtube.com/watch?v=nx6DFeNIXlA)
 
 ## Template Literals
+**Definition**: Template literals are string literals that can stretch across multiple lines and include interpolated expressions.
+
 Template Strings use back-ticks rather than single or double quotes.
 
 They help make the following easier:
